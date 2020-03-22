@@ -2,9 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Django Outlook HTML Email</title>
 </head>
 <body>
-
+    <ul>
+        {% for fruit in fruits %}
+        <li>{{ fruit.name }}</li>
+        {% endfor %}
+    </ul>
+    <img src="cid:fruit_img_src" alt="fruit" width="600">
 </body>
 </html>
