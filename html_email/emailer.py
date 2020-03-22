@@ -16,8 +16,8 @@ def send_email(body):
     imageCid = "fruit@image"
     attachment.PropertyAccessor.SetProperty("http://schemas.microsoft.com/mapi/proptag/0x3712001E", imageCid)
 
-    new_mail.Subject = subject
-    new_mail.To = to
+    new_mail.Subject = 'HTML Email Subject'
+    new_mail.To = 'abc@gmail.om'
     new_mail.HTMLBody = body.replace('fruit_img_src',imageCid)
     new_mail.Send()
 
