@@ -12,7 +12,7 @@ def send_email(body):
 
 
     attachment = new_mail.Attachments.Add(finders.find('images\\fruit.jpg'), win32.constants.olEmbeddeditem, 0,
-                                         "Attestation")
+                                         "Fruits")
     imageCid = "fruit@image"
     attachment.PropertyAccessor.SetProperty("http://schemas.microsoft.com/mapi/proptag/0x3712001E", imageCid)
 
